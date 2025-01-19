@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add post</title>
+</head>
+<body>
+    <form action="{{url_for('post_add')}}"method="POST">
+        <div><input type="text" name="photo_url" placeholder="رابط الصورة"></div>
+        <div><input type="text" name="name" placeholder="الاسم"></div>
+        <div><input type="date" name="date" id="date" placeholder="تاريخ النشر " required></div>
+        <div><textarea name="body" id="" placeholder="النص الدي ستقوم بنشره"></textarea></div>
+        <div><input type="submit" value="Create"></div>
+    </form>
+</body>
+</html>
